@@ -59,6 +59,15 @@ namespace ex_block2
                 }
             }
 
+            if (cnt == 0)
+            {
+                MessageBox.Show("У папці немає жодної нормальної картинки для обробки, або шлях до паки досі неправильний.", "Пусто", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show($"Готово! Кількість успішно оброблених файлів: {cnt}", "COOL");
+            }
+
         }
     }
 }
